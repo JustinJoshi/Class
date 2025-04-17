@@ -1,0 +1,71 @@
+/* Header */
+nav ul *{
+    float: left;
+    width: 25%;
+    list-style: none;
+    background-color: rgb(87, 139, 172);
+}
+/* First Sec */
+main{
+    background-color: rgb(87, 139, 172);
+    clear: both;
+    text-align: center;
+    list-style: none;
+}
+main ul *{
+    list-style: none;
+    background-color: rgb(87, 139, 172);
+}
+/* Second Sec */
+main + section{
+    background: white;
+}
+section ul *{
+    text-align: center;
+    list-style: none;
+}
+/* Third Sec */
+section + section{
+
+}
+section div{
+    float: left;
+    width: 50%;
+    background-color: gray;
+}
+/* Last Sec */
+main + section + section + section{
+    background-color: white;
+    text-align: center;
+}
+/* Footer */
+footer{
+    overflow: auto;
+    background-color: rgb(87, 139, 172);
+}
+footer > section{
+    width: 20%;
+    float: left;
+}
+footer > section > section ul *{
+    float: left;
+}
+footer > section + section{
+    float: right;
+    overflow: auto;
+}
+footer > section > section ul *{
+    float: left;
+    width: 100%;
+}
+footer > section > section + section *{
+    float: left;
+    width:  100%;
+}
+footer section + section + section{
+    clear: both;
+    float: left;
+}
+footer section + section + section *{
+    float: left;
+}

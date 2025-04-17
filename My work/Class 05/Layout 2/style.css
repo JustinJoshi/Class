@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+header,footer{
+    height: 100px;
+    clear: both;
+    border: 5px solid green;
+}
+section{
+    height: 200px;
+    clear: both;
+    border: 5px solid green;
+}
+div{
+    height: 300px;
+    width: 33.3333%;
+    border: 5px solid green;
+    float: left;
+}
+aside{
+    height: 300px;
+    width: 66.6666%;
+    border: 5px solid green;
+    float: right;
+}

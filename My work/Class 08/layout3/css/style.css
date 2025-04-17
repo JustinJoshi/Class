@@ -1,0 +1,106 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+/* borders */
+nav,main,aside{
+  border: 5px solid green;
+}
+
+/* span styling */
+span{
+  float: left;
+  width: 100%;
+  text-decoration: none;
+  color: gray;
+  font-size: x-small;
+}
+
+/* list styling */
+li{
+  width: 100%;
+  /*border*/: 1px dotted lavender;
+  overflow: auto;
+}
+
+/* image styling */
+img{
+  width: 100%;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/*sidebar*/
+header {
+float: left;
+width: 16.6666%;
+border: 5px solid green;
+height: 100%;
+}
+
+/*main content */
+main{
+  float: left;
+  width: 50%;
+}
+
+body
+/*Top right*/
+aside{
+  float: left;
+  width: 33.3333%;
+  height: 100%;
+}
+aside li{
+  float: left;
+}
+/*bottom*/
+section + section{
+  overflow: auto;
+  width: 83.3333%;
+  float: right;
+  border: 5px solid red;
+}
+section > h4{
+  width: 100%;
+  /*border*/: 1px dotted lavender;
+  overflow: auto;
+}
+
+ul section,ul p,ul img{
+  width: 33.3333%;
+  float: left;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

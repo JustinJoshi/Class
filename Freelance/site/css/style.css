@@ -1,0 +1,63 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body, *{
+  background-color: purple;
+  overflow: auto;
+}
+section:nth-child(odd){
+  color: green;
+  font-size: 200px;
+  background-color: purple;
+}
+section:nth-child(even){
+  color: orange;
+  font-size: 200px;
+  background-color: purple;
+}
+section:nth-child(4){
+  color: yellow;
+  font-size: 200px;
+  background-color: purple !important;
+}
+section:nth-child(4){
+  color: blue;
+  font-size: 200px;
+  background-color: purple !important;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
