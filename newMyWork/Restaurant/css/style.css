@@ -1,0 +1,397 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+li{
+  list-style: none;
+
+}
+body{
+  font-family: 'Open Sans';
+}
+
+
+/* set the parent elements to width 100% */
+html, body, .section-images {
+    width:100%;
+    height:100%;
+    margin:0;
+}
+/* first section */
+
+/* video */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.014);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  text-align: center;
+}
+
+.content h1{
+  font-size: 95px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.content a{
+  font-size: 23px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.content a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.backgroundClip{
+  position: absolute ;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+/*first section */
+
+.navC{
+  padding-right:200px;
+  font-family: 'Inter';
+}
+
+.ulC li img{
+  width: 60px;
+}
+
+
+
+.containerNav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.containerBG{
+  background: url('image.png') no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:start;
+  justify-content:start;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.containerMain section{
+  color: blue;
+  justify-content: start;
+  align-items:start;
+  display: flex;
+  padding: 100px 0 0 100px;
+}
+
+
+.xxl{
+  font-family: 'Playfair Display';
+  font-size:10rem;
+  width: 60%;
+  color:black;
+}
+
+.mainText{
+  display: flex;
+  justify-content:start;
+  align-items:start;
+  color: whitesmoke;
+}
+
+.subText{
+  font-size:80px;
+  display: flex;
+  justify-content:start;
+  flex-flow: column;
+}
+
+.list{
+  display: flex;
+  color: black;
+  font-size: 80px;
+}
+
+.containerNav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:80px;
+}
+
+.containerNav{
+display: flex;
+justify-content:end;
+
+}
+
+.containerNav li{
+  color:black;
+  font-size:30px;
+  font-weight: 450;  
+  
+}
+main h2{
+  font-size: 150px;
+  color:blue;
+  justify-content: center;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.facebook{
+  width:20px ;
+  margin: 0 0 2px 0;
+  height: 30px;
+}
+
+.instagram{
+  width: 30px;
+}
+
+/* Search Bar */
+
+
+
+.containerSearch{
+  display: flex;
+  justify-content: start;
+  padding:0 0 0 100px;
+  flex-flow: column;
+}
+
+
+.searchBar{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.box{
+  height: 60px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius:60px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.box:hover input{
+  width: 500px;
+}
+
+.box input{
+  width: 100px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.box a .fas{
+  color: black;
+  font-size: 100px;
+
+}
+
+/* Second Container */
+
+.containerAboutUsSecondHalf{
+  display: flex;
+  flex-flow: row;
+  justify-content: end;
+}
+
+.oatmealPhoto{
+display: flex;
+justify-content: end;
+}
+
+.oatmealPhoto img{
+  width: 50%;
+  height: 50%;
+}
+
+.piePhoto{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.containerAboutUs{
+  display: flex;
+  flex-flow: row;
+  color: orange;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.containerAboutUs span{
+  display: flex;
+  color: orange;
+  font-family: 'Playfair Display';
+}
+
+.containerAboutUsContent{
+  margin: 50px 0 0 0;
+  padding: 0 0 0 40px;
+  width: 40%; 
+}
+
+.containerAboutUsContent h2{
+  font-size: 80px; 
+  font-family: 'Playfair Display';
+  width: 50%;
+  margin: 0;
+}
+
+.oatmealPhoto img{
+  overflow: hidden;
+  width: 100%;
+}
+/* Third Container */
+
+.containerOrderNow{
+  display: flex;
+  justify-content:start;
+  flex-flow: column;
+  align-items: center;
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 0 0;
+}
+
+
+.containerOrderNow *{
+  color: blue;
+} 
+
+
+.containerOrderNow h2{
+  font-size: 80px;
+  font-family: 'Playfair Display';
+}
+
+
+.containerOrderList ul{
+  display: flex;
+  flex-flow: row;
+  gap: 44px;
+}
+
+.containerOrderPhotos ul{
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+}
+
+.containerOrderPhotos ul *{
+  width: 100%;
+  
+  display: flex;
+}
+
+/* fourth section */
+
+.containerOpeningHours{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-flow: column;
+  padding: 50px 0 0 0 ;
+  background-color: antiquewhite;
+}
+
+
+
+.containerOpeningHours *{
+ color: blue;
+}
+
+.containerOpeningHours h2{
+  font-size: 80px;
+}
+
+
+.containerTestimonials{
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  color: blue;
+  width: 100%;
+  height: 100%;
+  flex-flow: column;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
