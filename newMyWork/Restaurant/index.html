@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
   	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
   	<meta name="description" content="Your description goes here">
+	
   	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -13,8 +15,14 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+		<link rel="stylesheet" href="testimonials.css">
+		<!-- link for testimonials -->
+		<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slider.css">
 	</head>
 	<body>
 		<section class='containerBG'>
@@ -72,14 +80,36 @@
 				<h2 class="xl">
 					Discover Our Restaurant Story
 				</h2>
-				<p class="abtUsContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione laudantium reprehenderit. Nesciunt placeat deserunt numquam animi commodi, ab illo suscipit eligendi voluptatem blanditiis culpa dolor fugit neque perspiciatis nulla?</p>
-				<p class="abtUsContent second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores </p>
-				<button class="abtUsContent"> Discover Menu </button>
+				<p class="abtUsContent">We started Bubbles Kitchen with just our small family. Established in 2015, we take pride in serving the community in our little corner of New York. We've grown through local support to start offering new recipes beyond just our original breakfast offerings. Now we want to share with you our favorite new recipes!</p>
+				<p class="abtUsContent second">Come give us a visit at 344 3rd Ave #APT 16H New York, NY, 10010 </p>
+				<section class="btnCont">
+				<div class="container">
+						<a href="#orderNow" class="button">
+							<div class="button__content">
+							<span class="button__text">Discover Menu</span>
+							<i class="ri-download-cloud-fill button__icon"></i>
+
+							<div class="button__reflection-1"></div>
+							<div class="button__reflection-2"></div>
+							</div>
+
+							<img src="assets1/img/star.png" alt="" class="button__star-1">
+							<img src="assets1/img/star.png" alt="" class="button__star-2">
+							<img src="assets1/img/circle.png" alt="" class="button__circle-1">
+							<img src="assets1/img/circle.png" alt="" class="button__circle-2">
+							<img src="assets1/img/diamond.png" alt="" class="button__diamond">
+							<img src="assets1/img/triangle.png" alt="" class="button__triangle">
+				
+							<div class="button__shadow"></div>
+						</a>
+					</div>
+				</section>     
 			</section>
 		</section>
 
+
 		<section class="containerOrderNow">
-				<span class="orderNow">
+				<span id="orderNow" class="orderNow">
 					Order Online Now
 				</span>
 				<h2>
@@ -94,19 +124,51 @@
 						<li>Drinks</li>
 					</ul>
 				</section>
+        
 				<section class="containerOrderPhotos">
-					<ul>
-						<li><img class="coverImg img1" src="assets\restaurant-images\imgCopy\chickenSaladBread.jpg" alt="food"></li>
-						<li><img class="coverImg img2" src="assets\restaurant-images\imgCopy\carissa.jpg" alt="food"></li>
-						<li><img class="coverImg img3" src="assets\restaurant-images\imgCopy\bazzocco.jpg" alt="food"></li>
-						<li><img class="coverImg img4" class= 'eggToast'src="assets\restaurant-images\imgCopy\eggToast.jpg" alt="food"></li>
-					</ul>
-					<ul>
-						<li><img class="coverImg img5" src="assets\restaurant-images\imgCopy\chickenEggSam.jpg" alt="food"></li>
-						<li><img class="coverImg img6" src="assets\restaurant-images\imgCopy\medSalad.jpg" alt="food"></li>
-						<li><img class="coverImg img7" src="assets\restaurant-images\imgCopy\superSalad.jpg" alt="food"></li>
-						<li><img class="coverImg img8" src="assets\restaurant-images\imgCopy\fruitYogurt.png" alt="food"></li>
-					</ul>
+					<section class="sliderCont">
+						<div class="slide-container swiper">
+				        	<div class="slide-content">
+								<div class="card-wrapper swiper-wrapper">
+									<div class="card swiper-slide">
+										<img class="coverImg img1" src="assets\restaurant-images\imgCopy\chickenSaladBread.jpg" alt="food">
+									</div>
+	
+									<div class="card swiper-slide">
+										<img class="coverImg img2" src="assets\restaurant-images\imgCopy\carissa.jpg" alt="food">
+									</div>
+					
+                    				<div class="card swiper-slide">
+										<img class="coverImg img3" src="assets\restaurant-images\imgCopy\bazzocco.jpg" alt="food">
+                    				</div>
+
+									<div class="card swiper-slide">
+										<img class="coverImg img4" class= 'eggToast'src="assets\restaurant-images\imgCopy\eggToast.jpg" alt="food">
+									</div>
+								
+									<div class="card swiper-slide">
+										<img class="coverImg img5" src="assets\restaurant-images\imgCopy\chickenEggSam.jpg" alt="food">
+									</div>
+
+									<div class="card swiper-slide">
+										<img class="coverImg img6" src="assets\restaurant-images\imgCopy\medSalad.jpg" alt="food">
+									</div>
+
+									<div class="card swiper-slide">
+										<img class="coverImg img7" src="assets\restaurant-images\imgCopy\superSalad.jpg" alt="food">								
+									</div>
+
+									<div class="card swiper-slide">
+										<img class="coverImg img8" src="assets\restaurant-images\imgCopy\fruitYogurt.png" alt="food">
+									</div>
+								</div>
+							</div>
+            	<div class="swiper-button-next swiper-navBtn"></div>
+            	<div class="swiper-button-prev swiper-navBtn"></div>
+            	<div class="swiper-pagination"></div>
+        	</div>
+				</section>
+				
 				</section>
 				<img src="#" alt="dots">
 		</section>
@@ -115,7 +177,7 @@
 			<h2>Opening Hours</h2>
 			<img src="assets\restaurant-images\phone_PNG48988.png" alt="phone">
 			<span class="call">Call Now</span>
-			<span class="phoneNum">+12345 678 910</span>
+			<span class="phoneNum">+1 212-200-3114</span>
 			<section class="containerHours">
 				<div>
 					<span class="call">Monday to Friday</span>
@@ -131,18 +193,74 @@
 				<div class="shadow"></div>
 			</section>
 		</section>
-		<section class="containerTestimonials">
-			<span>
-				Testimonials
-			</span>
-			<h2>Customers Say</h2>
-			<img src="assets\restrauntVideos\pexels-alex-green-5699868.jpg" alt="person">
-			<span>Mr John Smith</span>
-			<span>Art Director</span>
-			<img src="#" alt="stars">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at corrupti, fugiat quis aspernatur quam unde ullam dolor, delectus adipisci expedita ad quod necessitatibus praesentium itaque ab repellendus facere inventore!</p>
-			<img src="#" alt="dots">
-		</section>
+
+			<div class="profile">
+        <div class="carousel">
+            <a class="carousel-item" href="#">
+                <div class="card">
+                    <div class="box1"></div>
+                    <div class="img-area"><img src="image/a1.jpg" alt=""></div>
+                    <div class="main-text">
+                        <h2>Person One</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+                    </div>
+                </div>
+            </a>
+            <a class="carousel-item" href="#">
+                <div class="card">
+                    <div class="box1"></div>
+                    <div class="img-area"><img src="image/a2.jpg" alt=""></div>
+                    <div class="main-text">
+                        <h2>Person two</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+                    </div>
+                </div>
+            </a>
+            <a class="carousel-item" href="#">
+                <div class="card">
+                    <div class="box1"></div>
+                    <div class="img-area"><img src="image/a3.jpg" alt=""></div>
+                    <div class="main-text">
+                        <h2>Person three</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+                    </div>
+                </div>
+            </a>
+            <a class="carousel-item" href="#">
+                <div class="card">
+                    <div class="box1"></div>
+                    <div class="img-area"><img src="image/a1.jpg" alt=""></div>
+                    <div class="main-text">
+                        <h2>Person four</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+                    </div>
+                </div>
+            </a>
+            <a class="carousel-item" href="#">
+                <div class="card">
+                    <div class="box1"></div>
+                    <div class="img-area"><img src="image/a1.jpg" alt=""></div>
+                    <div class="main-text">
+                        <h2>Person five</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+         $(document).ready(function(){
+            $('.carousel').carousel();
+          });	
+    </script>
 		<script type="text/javascript" src="js/main.js"></script>
+		    <!-- Swiper JS -->
+    	<script src="js/swiper-bundle.min.js"></script>
+		    <!-- JavaScript -->
+    	<script src="js/script.js"></script>
 	</body>
 </html>
