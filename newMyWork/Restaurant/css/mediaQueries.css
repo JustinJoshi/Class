@@ -1,0 +1,96 @@
+*{
+    font-family: 'Playfair Display';
+}
+
+
+.containerNavMobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    color: black;
+}
+.navListMobile{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    background-color: salmon;
+    font-family: 'Playfair Display';
+}
+.welcomeMobile{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+.logoMobile{
+    width: 100%;
+}
+
+/* Second Section */
+
+.headerMobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.newYork{
+    font-style: italic;
+}
+
+.smallRes h1{
+   padding: 0 0 0 0; 
+   margin: 0 0 0 0;
+    color: black;
+}
+
+/* .imgBGMobile{
+    object-fit: fill;
+    width:100vw;
+
+}
+
+.BGCont{
+    width:100vw;
+    height: 40vh;
+} */
+
+
+.secondImgMobile{
+    object-fit: none;
+    object-position:100%;
+}
+
+.containerAboutUsMobile{
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    color: black;
+} 
+
+.headerAboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .crop {
+    width: auto;
+    height:auto;
+    overflow: hidden;
+} */
+
+
+
+
+@media all and (max-width: 800px){
+    .containerBG, .containerAboutUs{
+        display: none;
+    }
+    .containerNav
+    
+}

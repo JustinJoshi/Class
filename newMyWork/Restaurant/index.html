@@ -15,26 +15,31 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="testimonials.css">
+		<link rel="stylesheet" href="css/testimonials.css">
 		<!-- link for testimonials -->
 		<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/slider.css">
+		<!-- Media Queries -->
+		<link rel="stylesheet" href="css/mediaQueries.css">
+		<!-- Search -->
 	</head>
 	<body>
+		<!-- First section -->
 		<section class='containerBG'>
 			<section class="containerNav">
 				<nav class="navC">
+					<img src="assets\logocapital1.png" class="logo" alt="">
 					<ul class="ulC">
 						<li>Home</li>
 						<li>About Us</li>
 						<li>Menu</li>
-						<li>Order Now</li>
-						<li>Blog</li>
-						<li>Location</li>
+						<li class="orderlist">Order Now</li>
+						<li>
+							<a href="#location">Location</a>
+						</li>
 						<li>
 							<img src="assets\restaurant-images\imgCopy\shopping-cart-solid-icon-md-2674263986.png" alt="">
 						</li>
@@ -51,55 +56,89 @@
 				</main>
 			</section>
 			<section class="containerSearch">
-				<section class="searchBar">
-            		<div class="box">
-             			<input type="text" placeholder="Search Locations">
-              			<a href="#">
-                			<i class="fas fa-search"></i>
-               			</a>
-            		</div>	
-				</section>
-			
-				<section>
-					<ul class="list">
-						<li>
-							<img class="facebook" src="assets\restaurant-images\imgCopy\facebook.png" alt="">
-						</li>
-						<li>
-							<img class="instagram" src="assets\Instagram-Logo-2887919693.png" alt="">
-						</li>
-					</ul>
-				</section>
+				<form onsubmit="event.preventDefault();" role="search">
+  					<label for="search">Search for stuff</label>
+  					<input id="search" type="search" placeholder="Search..." autofocus required />
+  					<button type="submit">Go</button>    
+				</form>	
 			</section>
 		</section>
+
+	<!-- Mobile First Section -->
+
+		<section class="containerBGMobile">
+			<section class="containerNavMobile">
+				<nav class="navMobile">
+					<ul class="navListMobile">
+						<li>Home</li>	
+						<li>About Us</li>	
+						<li>Location</li>	
+						<li>Order Now</li>	
+					</ul>
+				</nav>
+				<section class="welcomeMobile">
+					<h1>Welcome To</h1>
+					<img class="logoMobile" src="assets\bubblesKitchenLogo.png" alt="">
+				</section>
+					<!-- <section class="BGCont"> -->
+						<img src="css/firstBGCopy.png" alt="" class="imgBGMobile">
+					<!-- </section> -->
+
+			</section>
+		</section>
+
+	<!-- Mobile Second Section -->
+
+		<section class="containerAboutUsMobile">
+			<section class="headerMobile">
+				<span>We're a</span>
+				<section class="smallRes">
+					<h1>Small Restaurant</h1> 
+					<h1>Based in<span class="newYork">New York</span> </h1>
+				</section>
+			</section>
+			<section class="crop1">
+				<img src="css\secondBGNewMobile.png" alt="" class="secondImgMobile">
+			</section>
+		</section>
+		
+<!-- Mobile Third Section -->
+
+		<section class="containerAboutUsMobile">
+			<section class="headerAboutUs">
+				<span>About Us</span>
+			</section>
+			<section class="blurbMobile">
+				<p>We started Bubbles Kitchen with just our small family. Established in 2015, we take pride in serving the community in out little corner of New York. We want to share our favorite new recipes with you!</p>
+			</section>
+		</section>
+
 		<section class="containerAboutUs">
 			<section class="containerAboutUsContent">
-				<span class="abtUsContent">
+				<span class="abtUsContent1">
 					About Us
 				</span>
 				<h2 class="xl">
 					Discover Our Restaurant Story
 				</h2>
 				<p class="abtUsContent">We started Bubbles Kitchen with just our small family. Established in 2015, we take pride in serving the community in our little corner of New York. We've grown through local support to start offering new recipes beyond just our original breakfast offerings. Now we want to share with you our favorite new recipes!</p>
-				<p class="abtUsContent second">Come give us a visit at 344 3rd Ave #APT 16H New York, NY, 10010 </p>
+				<p class="abtUsContentMobile">We started Bubbles Kitchen with just our small family. Established in 2015, we take pride in serving the community in our little corner of New York. We want to share with you our favorite new recipes!</p>
+				<p id="location" class="abtUsContent second">Come give us a visit at 344 3rd Ave #APT 16H New York, NY, 10010 </p>
 				<section class="btnCont">
-				<div class="container">
+					<div class="container">
 						<a href="#orderNow" class="button">
 							<div class="button__content">
-							<span class="button__text">Discover Menu</span>
-							<i class="ri-download-cloud-fill button__icon"></i>
-
-							<div class="button__reflection-1"></div>
-							<div class="button__reflection-2"></div>
+								<span class="button__text">Discover Menu</span>
+								<i class="ri-download-cloud-fill button__icon"></i>
+								<div class="button__reflection-1"></div>
+								<div class="button__reflection-2"></div>
 							</div>
-
 							<img src="assets1/img/star.png" alt="" class="button__star-1">
 							<img src="assets1/img/star.png" alt="" class="button__star-2">
 							<img src="assets1/img/circle.png" alt="" class="button__circle-1">
 							<img src="assets1/img/circle.png" alt="" class="button__circle-2">
 							<img src="assets1/img/diamond.png" alt="" class="button__diamond">
-							<img src="assets1/img/triangle.png" alt="" class="button__triangle">
-				
+							<img src="assets1/img/triangle.png" alt="" class="button__triangle">	
 							<div class="button__shadow"></div>
 						</a>
 					</div>
@@ -109,73 +148,70 @@
 
 
 		<section class="containerOrderNow">
-				<span id="orderNow" class="orderNow">
-					Order Online Now
-				</span>
-				<h2>
-					Our Specialty Cuisine
-				</h2>
-				<section class="containerOrderList">
-					<ul>
-						<li>Breakfast</li>
-						<li>Lunch</li>
-						<li>Dinner</li>	
-						<li>Dessert</li>
-						<li>Drinks</li>
-					</ul>
-				</section>
-        
-				<section class="containerOrderPhotos">
-					<section class="sliderCont">
-						<div class="slide-container swiper">
-				        	<div class="slide-content">
-								<div class="card-wrapper swiper-wrapper">
-									<div class="card swiper-slide">
-										<img class="coverImg img1" src="assets\restaurant-images\imgCopy\chickenSaladBread.jpg" alt="food">
-									</div>
-	
-									<div class="card swiper-slide">
-										<img class="coverImg img2" src="assets\restaurant-images\imgCopy\carissa.jpg" alt="food">
-									</div>
-					
-                    				<div class="card swiper-slide">
-										<img class="coverImg img3" src="assets\restaurant-images\imgCopy\bazzocco.jpg" alt="food">
-                    				</div>
+			<span id="orderNow" class="orderNow">
+				Order Online Now
+			</span>
+			<h2 class="Specialty">
+				Our Specialty Cuisine
+			</h2>
+			<section class="containerOrderList">
+				<ul>
+					<li>Breakfast</li>
+					<li>Lunch</li>
+					<li>Dinner</li>	
+					<li>Dessert</li>
+					<li>Drinks</li>
+				</ul>
+			</section>
+		</section>
+			<section class="containerOrderPhotos">
+				<section class="sliderCont">
+					<div class="slide-container swiper">
+						<div class="slide-content">
+							<div class="card-wrapper swiper-wrapper">
+								<div class="card swiper-slide">
+									<img class="coverImg img1" src="assets\restaurant-images\imgCopy\chickenSaladBread.jpg" alt="food">
+								</div>
 
-									<div class="card swiper-slide">
-										<img class="coverImg img4" class= 'eggToast'src="assets\restaurant-images\imgCopy\eggToast.jpg" alt="food">
-									</div>
-								
-									<div class="card swiper-slide">
-										<img class="coverImg img5" src="assets\restaurant-images\imgCopy\chickenEggSam.jpg" alt="food">
-									</div>
+								<div class="card swiper-slide">
+									<img class="coverImg img2" src="assets\restaurant-images\imgCopy\carissa.jpg" alt="food">
+								</div>
+				
+								<div class="card swiper-slide">
+									<img class="coverImg img3" src="assets\restaurant-images\imgCopy\bazzocco.jpg" alt="food">
+								</div>
 
-									<div class="card swiper-slide">
-										<img class="coverImg img6" src="assets\restaurant-images\imgCopy\medSalad.jpg" alt="food">
-									</div>
+								<div class="card swiper-slide">
+									<img class="coverImg img4" class= 'eggToast'src="assets\restaurant-images\imgCopy\eggToast.jpg" alt="food">
+								</div>
+							
+								<div class="card swiper-slide">
+									<img class="coverImg img5" src="assets\restaurant-images\imgCopy\chickenEggSam.jpg" alt="food">
+								</div>
 
-									<div class="card swiper-slide">
-										<img class="coverImg img7" src="assets\restaurant-images\imgCopy\superSalad.jpg" alt="food">								
-									</div>
+								<div class="card swiper-slide">
+									<img class="coverImg img6" src="assets\restaurant-images\imgCopy\medSalad.jpg" alt="food">
+								</div>
 
-									<div class="card swiper-slide">
-										<img class="coverImg img8" src="assets\restaurant-images\imgCopy\fruitYogurt.png" alt="food">
-									</div>
+								<div class="card swiper-slide">
+									<img class="coverImg img7" src="assets\restaurant-images\imgCopy\superSalad.jpg" alt="food">								
+								</div>
+
+								<div class="card swiper-slide">
+									<img class="coverImg img8" src="assets\restaurant-images\imgCopy\fruitYogurt.png" alt="food">
 								</div>
 							</div>
-            	<div class="swiper-button-next swiper-navBtn"></div>
-            	<div class="swiper-button-prev swiper-navBtn"></div>
-            	<div class="swiper-pagination"></div>
-        	</div>
-				</section>
-				
-				</section>
-				<img src="#" alt="dots">
-		</section>
+						</div>
+						<div class="swiper-button-next swiper-navBtn"></div>
+						<div class="swiper-button-prev swiper-navBtn"></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</section>	
+			</section>
 		<section class="containerOpeningHours">
 			<span class="book">Book Table</span>
-			<h2>Opening Hours</h2>
-			<img src="assets\restaurant-images\phone_PNG48988.png" alt="phone">
+			<h2 class="openHr">Opening Hours</h2>
+			<img class="iconPhone" src="assets\restaurant-images\phone_PNG48988.png" alt="phone">
 			<span class="call">Call Now</span>
 			<span class="phoneNum">+1 212-200-3114</span>
 			<section class="containerHours">
@@ -194,69 +230,6 @@
 			</section>
 		</section>
 
-			<div class="profile">
-        <div class="carousel">
-            <a class="carousel-item" href="#">
-                <div class="card">
-                    <div class="box1"></div>
-                    <div class="img-area"><img src="image/a1.jpg" alt=""></div>
-                    <div class="main-text">
-                        <h2>Person One</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#">
-                <div class="card">
-                    <div class="box1"></div>
-                    <div class="img-area"><img src="image/a2.jpg" alt=""></div>
-                    <div class="main-text">
-                        <h2>Person two</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#">
-                <div class="card">
-                    <div class="box1"></div>
-                    <div class="img-area"><img src="image/a3.jpg" alt=""></div>
-                    <div class="main-text">
-                        <h2>Person three</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#">
-                <div class="card">
-                    <div class="box1"></div>
-                    <div class="img-area"><img src="image/a1.jpg" alt=""></div>
-                    <div class="main-text">
-                        <h2>Person four</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
-                    </div>
-                </div>
-            </a>
-            <a class="carousel-item" href="#">
-                <div class="card">
-                    <div class="box1"></div>
-                    <div class="img-area"><img src="image/a1.jpg" alt=""></div>
-                    <div class="main-text">
-                        <h2>Person five</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo quas eius!</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-    <script>
-         $(document).ready(function(){
-            $('.carousel').carousel();
-          });	
-    </script>
 		<script type="text/javascript" src="js/main.js"></script>
 		    <!-- Swiper JS -->
     	<script src="js/swiper-bundle.min.js"></script>
